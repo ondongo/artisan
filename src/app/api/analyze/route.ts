@@ -1,4 +1,5 @@
 import { ImageAnnotatorClient } from "@google-cloud/vision";
+import {NextResponse} from "next/server";
 
 export async function POST(req: any, res: any) {
   //if (req.method === "POST") {
@@ -19,12 +20,10 @@ export async function POST(req: any, res: any) {
 
     const detections = result.textAnnotations ?? [];
 
-    res.status(200).json({
-      success: true,
-      extractedText: detections[0]?.description || "Aucun texte trouvé.",
-    });
+
+    return NextResponse.json({ success: true, extractedText: detections[0]?.description || "Aucun texte trouvé." });
   } catch (error) {
-    res.status(500).json({ success: false, message: error });
+    return NextResponse.json({ success: false, message: error});
   }
   /* } else {
     res.status(405).json({ success: false, message: "Méthode non autorisée" });
