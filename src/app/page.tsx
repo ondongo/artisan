@@ -57,11 +57,7 @@ export default function Home() {
 
     const data = await res.json();
 
-    if (data.success) {
-      alert(`Texte extrait : ${data.extractedText}`);
-    } else {
-      alert(`Erreur : ${data.message}`);
-    }
+    console.log("data", data);
   };
 
   return (
