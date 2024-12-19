@@ -74,7 +74,7 @@ export default function Home() {
         ],
       };
 
-      const res: any = await fetch("http://localhost:3000/api/documentai", {
+      const res: any = await fetch(`${process.env.HOST}/api/documentai`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -136,7 +136,7 @@ export default function Home() {
 
   return (
     <Flex height={"auto"} direction={"column"} gap={8}>
-      <Tabs variant="soft-rounded" colorScheme="green">
+      <Tabs variant="soft-rounded" colorScheme="orange">
         <TabList
           py={10}
           display={"flex"}
@@ -161,7 +161,7 @@ export default function Home() {
                 <div
                   {...getRootProps()}
                   style={{
-                    border: "2px dashed #319795",
+                    border: "2px dashed #DD6A1F",
                     padding: "20px",
                     borderRadius: "8px",
                     cursor: "pointer",
@@ -200,7 +200,7 @@ export default function Home() {
                 <Flex mt={4}>
                   <Button
                     onClick={handleSubmit}
-                    colorScheme="teal"
+                    colorScheme="orange"
                     disabled={isLoading}
                   >
                     {isLoading ? (
@@ -308,11 +308,11 @@ export default function Home() {
                       </Text>
 
                       <Flex direction="column" align="center" p={6}>
-                        <Box bg="#C6F6D4" width="100%" borderRadius="8px" p={2}>
+                        <Box bg="#DD6A1F" width="100%" borderRadius="8px" p={2}>
                           <Text
                             fontSize="lg"
                             fontWeight="600"
-                            color="green.700"
+                            color="orange.300"
                           >
                             85% de fiabilité
                           </Text>
