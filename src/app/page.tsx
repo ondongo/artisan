@@ -1,6 +1,14 @@
+"use client"
 import { Box, Button, Container, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/demo');
+  };
     return (
         <Box bg="gray.50" minH="100vh">
             {/* Header */}
@@ -26,10 +34,10 @@ export default function Home() {
                             Obtenez une analyse experte de vos devis en quelques clics
                         </Heading>
                         <Text fontSize="lg" color="gray.600" mb={6}>
-                            Notre technologie d'intelligence artificielle analyse votre devis, le contexte et les images
+                            Notre technologie d&apos;intelligence artificielle analyse votre devis, le contexte et les images
                             pour vous fournir un avis objectif et détaillé.
                         </Text>
-                        <Button colorScheme="orange" size="lg">
+                        <Button colorScheme="orange" size="lg" onClick={handleClick}>
                             Analyser mon devis gratuitement
                         </Button>
                     </Box>
