@@ -41,7 +41,7 @@ const StormDiv = () => {
                 fontSize="xl"
                 ml={12} // Décale légèrement le contenu
             >
-                Ne laissez plus les devis ralentir vos travaux. Passer à la vitesse supérieure dès aujourd'hui !
+                Ne laissez plus les devis ralentir vos travaux. Passer à la vitesse supérieure dès aujourd&apos;hui !
             </Text>
 
             <Button
