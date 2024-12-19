@@ -1,5 +1,6 @@
 "use client";
 
+import NavBar from "@/components/NavBar";
 import {
   Button,
   Flex,
@@ -136,6 +137,7 @@ export default function Home() {
 
   return (
     <Flex height={"auto"} direction={"column"} gap={8}>
+      <NavBar />
       <Tabs variant="soft-rounded" colorScheme="orange">
         <TabList
           py={10}
