@@ -1,63 +1,58 @@
-import { Box, Button, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Image, Text, Stack } from "@chakra-ui/react";
 
 const StormDiv = () => {
     return (
         <Box
             bg="#DD6B20"
             w="100%"
-            h="450px"
+            h={{ base: "auto", md: "450px" }}
             borderRadius="md"
             overflow="hidden"
             position="relative"
             boxShadow="lg"
+            p={{ base: 4, md: 8 }}
         >
-            <Image
-                src="img.png"
-                alt="Analyse illustration"
-                boxSize={{ base: "300px", md: "400px" }}
-                objectFit="contain"
-                ml={60} // Décale l'image un peu plus à droite
-            />
-
-            <Text
-                position="absolute"
-
-                left="70%" // Décale le texte principal vers la droite
-                bottom="45%"
-                transform="translate(-50%, -50%)"
-                color="white"
-                fontSize="5xl"
-                fontWeight="bold"
-                textAlign="start"
+            <Stack
+                direction={{ base: "column", md: "row" }}
+                align="center"
+                justify="center"
+                spacing={6}
+                h="100%"
             >
-                Analyse de devis en 30 secondes par IA
-            </Text>
-            <Text
-                position="absolute"
-                bottom="35%"
-                left="67.5%" // Décale le texte secondaire vers la droite
-                transform="translate(-50%, -50%)"
-                color="white"
-                fontSize="xl"
-                ml={12} // Décale légèrement le contenu
-            >
-                Ne laissez plus les devis ralentir vos travaux. Passer à la vitesse supérieure dès aujourd&apos;hui !
-            </Text>
+                <Image
+                    src="img.png"
+                    alt="Analyse illustration"
+                    boxSize={{ base: "250px", md: "350px" }}
+                    objectFit="contain"
+                />
 
-            <Button
-                bg={"white"}
-                position="absolute"
-                bottom="20%"
-                left="65%" // Décale le bouton vers la droite
-                transform="translate(-50%, -50%)"
-                colorScheme="orange"
-                size="lg"
-                onClick={() => console.log("Analyser mon devis gratuitement")}
-                borderRadius={10}
-                color={"#DD6B20"}
-            >
-                Démarrer mon essai gratuit
-            </Button>
+                <Box textAlign={{ base: "center", md: "left" }} maxW="600px">
+                    <Text
+                        color="white"
+                        fontSize={{ base: "2xl", md: "4xl" }}
+                        fontWeight="bold"
+                        mb={4}
+                    >
+                        Analyse de devis en 30 secondes par IA
+                    </Text>
+                    <Text
+                        color="white"
+                        fontSize={{ base: "md", md: "lg" }}
+                        mb={6}
+                    >
+                        Ne laissez plus les devis ralentir vos travaux. Passez à la vitesse supérieure dès aujourd&apos;hui !
+                    </Text>
+                    <Button
+                        bg="white"
+                        color="#DD6B20"
+                        size="lg"
+                        onClick={() => console.log("Analyser mon devis gratuitement")}
+                        borderRadius="md"
+                    >
+                        Démarrer mon essai gratuit
+                    </Button>
+                </Box>
+            </Stack>
         </Box>
     );
 };
