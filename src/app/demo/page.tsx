@@ -144,7 +144,7 @@ export default function Home() {
           alignItems={"center"}
         >
           <Tab>Analyser votre devis avec notre IA</Tab>
-          <Tab>Obtenez l'aide d'un expert</Tab>
+          <Tab>Obtenez l&apos;aide d&apos;un expert</Tab>
         </TabList>
         <TabPanels>
           <TabPanel
@@ -247,7 +247,7 @@ export default function Home() {
                           Analyser extraction avec IA
                         </Button>
                         <Text color="gray.500" mt={2}>
-                          Le texte extrait pour analyse à l'IA
+                          Le texte extrait pour analyse à l&apos;IA
                         </Text>
 
                         <Box mt={4} p={4} borderWidth="1px" borderRadius="8px">
