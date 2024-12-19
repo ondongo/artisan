@@ -1,8 +1,8 @@
 "use client"
 import { Box, Button, Container, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/navigation';
-import KeyFiguresSection from "@/app/components/number";
-import ScrollToTopButton from "@/app/components/ScrollToTopButton";
+import KeyFiguresSection from "@/components/number";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 export default function Home() {
 
   const router = useRouter();
