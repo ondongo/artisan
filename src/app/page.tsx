@@ -55,7 +55,7 @@ export default function Home() {
             </Container>
 
             {/* Features Section */}
-            <Box bg="white" py={8} mt={12}>
+            <Box  py={8} mt={12}>
                 <SimpleGrid columns={{ base: 1, md: 4 }} spacing={6} maxW="6xl" mx="auto" textAlign="center">
                     <FeatureCard title="Analyse complète du devis">
                         <Image
