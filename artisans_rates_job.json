@@ -1,0 +1,89 @@
+{
+    "metiers_artisans": [
+      {
+        "id": 1,
+        "nom": "Peintre",
+        "description": "Peinture intérieure et extérieure",
+        "tarifs": [
+          {
+            "regions": ["Île-de-France", "Hauts-de-France", "Normandie"],
+            "type_projet": "Mur intérieur",
+            "prix_min": 20,
+            "prix_max": 40,
+            "unite": "m²"
+          },
+          {
+            "regions": ["Provence-Alpes-Côte d'Azur", "Auvergne-Rhône-Alpes", "Occitanie"],
+            "type_projet": "Mur extérieur",
+            "prix_min": 25,
+            "prix_max": 50,
+            "unite": "m²"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "Plombier",
+        "description": "Installation et réparation de systèmes de plomberie",
+        "tarifs": [
+          {
+            "regions": ["Île-de-France", "Nouvelle-Aquitaine", "Bretagne"],
+            "type_projet": "Installation de tuyaux",
+            "prix_min": 50,
+            "prix_max": 100,
+            "unite": "heure"
+          },
+          {
+            "regions": ["Bretagne", "Pays de la Loire", "Grand Est"],
+            "type_projet": "Réparation de fuites",
+            "prix_min": 60,
+            "prix_max": 90,
+            "unite": "heure"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "nom": "Électricien",
+        "description": "Mise aux normes et installation électrique",
+        "tarifs": [
+          {
+            "regions": ["Nouvelle-Aquitaine", "Occitanie", "Centre-Val de Loire"],
+            "type_projet": "Mise aux normes",
+            "prix_min": 70,
+            "prix_max": 150,
+            "unite": "projet"
+          },
+          {
+            "regions": ["Occitanie", "Auvergne-Rhône-Alpes", "Provence-Alpes-Côte d'Azur"],
+            "type_projet": "Installation complète",
+            "prix_min": 1000,
+            "prix_max": 3000,
+            "unite": "projet"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "nom": "Maçon",
+        "description": "Construction de murs, terrasses et structures",
+        "tarifs": [
+          {
+            "regions": ["Hauts-de-France", "Normandie", "Île-de-France"],
+            "type_projet": "Construction de murs",
+            "prix_min": 80,
+            "prix_max": 200,
+            "unite": "m²"
+          },
+          {
+            "regions": ["Grand Est", "Pays de la Loire", "Bretagne"],
+            "type_projet": "Construction de terrasses",
+            "prix_min": 100,
+            "prix_max": 300,
+            "unite": "m²"
+          }
+        ]
+      }
+    ]
+  }
+  
