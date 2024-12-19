@@ -74,7 +74,7 @@ export default function Home() {
         ],
       };
 
-      const res: any = await fetch(`${process.env.HOST}/api/documentai`, {
+      const res: any = await fetch("/api/documentai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
