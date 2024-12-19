@@ -3,6 +3,7 @@ import { Box, Button, Container, Flex, Heading, Image, SimpleGrid, Text } from '
 import { useRouter } from 'next/navigation';
 import KeyFiguresSection from "@/components/number";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import StormDiv from "@/components/section";
 export default function Home() {
 
   const router = useRouter();
@@ -109,6 +110,7 @@ export default function Home() {
                 </SimpleGrid>
             </Box>
             <KeyFiguresSection />
+            <StormDiv />
             <ScrollToTopButton />
         </Box>
     );
