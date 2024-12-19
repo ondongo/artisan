@@ -14,7 +14,7 @@ function NavBar() {
       <Box fontWeight="bold" fontSize="lg" color="orange.500">
         Logos
       </Box>
-      <Button colorScheme="orange" variant="solid" size="sm">
+      <Button colorScheme="orange" variant="solid" size="md">
         Contact
       </Button>
     </Flex>
