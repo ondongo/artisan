@@ -31,7 +31,7 @@ export default function RootLayout({
         <Analytics />
         <Script
           id="crisp-chat"
-          strategy="afterInteractive" 
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.$crisp=[];

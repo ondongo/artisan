@@ -12,7 +12,7 @@ function NavBar() {
       boxShadow="sm"
     >
       <Box fontWeight="bold" fontSize="lg" color="orange.500">
-        Logo
+        Logos
       </Box>
       <Button colorScheme="orange" variant="solid" size="sm">
         Contact
