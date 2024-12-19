@@ -63,6 +63,7 @@ export async function POST(request: any) {
   const files = await request.json();
 
   const fileData = files?.files?.[0]?.file ?? "aucun"; // Récupère le premier fichier
+  console.log(files?.files?.[0]?.mimetype);
 
   const projectId = process.env.PROJECT_ID;
   const location = process.env.REGION_ID;
@@ -90,7 +91,7 @@ export async function POST(request: any) {
     name: name,
     rawDocument: {
       content: fileData,
-      mimeType: "application/pdf",
+      mimeType:files?.files?.[0]?.mimetype ?? "application/pdf",
     },
   };
 
