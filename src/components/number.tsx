@@ -8,7 +8,7 @@ const KeyFiguresSection = () => {
                 Nos chiffres clés
             </Text>
             <Text fontSize="2xl" fontWeight="bold" mb={6}>
-                Nos chiffres clés démontrent la viabilité et la solidité de notre solution.
+                Vérifiez votre devis : évitez l&apos;arnaque !
             </Text>
 
             <Flex justify="center" align="center" direction="row" gap={8}>
