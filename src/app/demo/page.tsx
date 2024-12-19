@@ -1,5 +1,6 @@
 "use client";
 
+import NavBar from "@/components/NavBar";
 import {
   Button,
   Flex,
@@ -136,6 +137,7 @@ export default function Home() {
 
   return (
     <Flex height={"auto"} direction={"column"} gap={8}>
+      <NavBar />
       <Tabs variant="soft-rounded" colorScheme="orange">
         <TabList
           py={10}
@@ -144,7 +146,7 @@ export default function Home() {
           alignItems={"center"}
         >
           <Tab>Analyser votre devis avec notre IA</Tab>
-          <Tab>Obtenez l&apos;aide d&apos;un expert</Tab>
+          {/*  <Tab>Obtenez l&apos;aide d&apos;un expert</Tab> */}
         </TabList>
         <TabPanels>
           <TabPanel
@@ -153,9 +155,9 @@ export default function Home() {
             alignItems={"center"}
           >
             <Flex
-              direction={"row"}
-              justifyContent={"space-between"}
-              width={"80%"}
+              direction={["column", null, "row"]}
+              justifyContent={["center", null, "space-between"]}
+              width={["95%", null, "80%"]}
             >
               <Flex direction="column" align="center">
                 <div
@@ -219,7 +221,12 @@ export default function Home() {
                 </Box>
               </Flex>
 
-              <Stack direction="row" h="750px" p={4}>
+              <Stack
+                direction="row"
+                h="750px"
+                p={4}
+                display={["none", null, "block"]}
+              >
                 <Divider orientation="vertical" />
               </Stack>
 
