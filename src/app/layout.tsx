@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/providers/providers";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 /* const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,6 +29,23 @@ export default function RootLayout({
       <body>
         <Providers>{children}</Providers>
         <Analytics />
+        <Script
+          id="crisp-chat"
+          strategy="afterInteractive" 
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.$crisp=[];
+              window.CRISP_WEBSITE_ID="67015992-6c5f-44e4-9f35-6c29aec4eb43";
+              (function(){
+                var d=document;
+                var s=d.createElement("script");
+                s.src="https://client.crisp.chat/l.js";
+                s.async=1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );
