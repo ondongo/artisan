@@ -74,7 +74,7 @@ export default function Home() {
         ],
       };
 
-      const res: any = await fetch("/api/documentai", {
+      const res: any = await fetch("http://localhost:3000/api/documentai", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

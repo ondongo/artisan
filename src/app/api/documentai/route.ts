@@ -21,15 +21,42 @@ const fetchFile = async (url: any) => {
   return res.arrayBuffer(); // Return the content as a buffer
 };
 
+const credentials = {
+  type: process.env.TYPE,
+  project_id: process.env.PROJECT_ID,
+  private_key_id: process.env.PRIVATE_KEY_ID,
+  private_key: process.env.PRIVATE_KEY.replace(/\\n/g, "\n"),
+  client_email: process.env.CLIENT_EMAIL,
+  client_id: process.env.CLIENT_ID,
+  auth_uri: process.env.AUTH_URI,
+  token_uri: process.env.TOKEN_URI,
+  auth_provider_x509_cert_url: process.env.AUTH_PROVIDER_X509_CERT_URL,
+  client_x509_cert_url: process.env.CLIENT_X509_CERT_URL,
+  universe_domain: process.env.UNIVERSE_DOMAIN,
+};
+
+
 export async function POST(request: any) {
-  //const GOOGLE_APPLICATION_CREDENTIALS = path.resolve(__dirname, "../../../artisan-documentai-bc5a01cb67b6.json");
+ 
   const documentclient = new DocumentProcessorServiceClient({
     /*  credentials: {
       private_key: process.env.PRIVATE_KEY, // Your private key from the service account
       client_email: process.env.CLIENT_EMAIL, // Your client email from the service account
     }, */
 
-    keyFilename: keyFilename,
+    credentials: {
+      type: process.env.TYPE,
+      project_id: process.env.PROJECT_ID,
+      private_key_id: process.env.PRIVATE_KEY_ID,
+      private_key: process.env.PRIVATE_KEY.replace(/\\n/g, "\n"),
+      client_email: process.env.CLIENT_EMAIL,
+      client_id: process.env.CLIENT_ID,
+      //auth_uri: process.env.AUTH_URI,
+      //token_uri: process.env.TOKEN_URI,
+      //auth_provider_x509_cert_url: process.env.AUTH_PROVIDER_X509_CERT_URL,
+      //client_x509_cert_url: process.env.CLIENT_X509_CERT_URL,
+      universe_domain: process.env.UNIVERSE_DOMAIN,
+    },
     apiEndpoint: `${process.env.REGION_ID}-documentai.googleapis.com`,
   });
 
@@ -37,7 +64,6 @@ export async function POST(request: any) {
 
   const fileData = files?.files?.[0]?.file ?? "aucun"; // Récupère le premier fichier
 
-  console.log("File>>>>>>>>>", fileData);
   const projectId = process.env.PROJECT_ID;
   const location = process.env.REGION_ID;
   const processorId = process.env.PROCESSOR_ID;
@@ -70,7 +96,7 @@ export async function POST(request: any) {
 
   try {
     const [response] = await documentclient.processDocument(req);
-    console.log("Document processed successfully:", response);
+    //console.log("Document processed successfully:", response);
     const document = response.document;
 
     const { text } = document;
