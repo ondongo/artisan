@@ -3,7 +3,7 @@ import { Box, Text, Flex } from "@chakra-ui/react";
 
 const KeyFiguresSection = () => {
     return (
-        <Box bg="gray.50" p={8} textAlign="center">
+        <Box bg="gray.50" p={8} textAlign="center" mb={8} mt={8}>
             <Text fontSize="5xl" fontWeight="bold">
                 Nos chiffres clés
             </Text>
@@ -15,22 +15,32 @@ const KeyFiguresSection = () => {
                 {/* Bloc 1 */}
                 <Flex direction="column" align="center">
                     <Text fontSize="5xl" fontWeight="extrabold" color="black">
-                        92%
+                        50%
                     </Text>
                     <Text fontSize="md" color="gray.600">
-                        Taux de satisfaction de nos clients
+                        Ont déjà eu un roblème avec un devis
                     </Text>
+
                 </Flex>
 
                 {/* Bloc 2 */}
                 <Flex direction="column" align="center">
                     <Text fontSize="5xl" fontWeight="extrabold" color="black">
-                        150+
+                        40%
                     </Text>
                     <Text fontSize="md" color="gray.600">
-                        Partenariats conclus
+                        Afirment manquer de connaisances sur le sujet
                     </Text>
                 </Flex>
+
+                <Flex direction="column" align="center">
+                    <Text fontSize="5xl" fontWeight="extrabold" color="black">
+                        15000
+                    </Text>
+                    <Text fontSize="md" color="gray.600">
+                        Particuliers en 2023 ont eu affaire à une arnaque
+                    </Text>
+            </Flex>
             </Flex>
         </Box>
     );
