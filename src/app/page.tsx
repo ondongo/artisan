@@ -1,7 +1,6 @@
 import { Box, Button, Container, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
 
 export default function Home() {
-    // @ts-ignore
     return (
         <Box bg="gray.50" minH="100vh">
             {/* Header */}
@@ -57,6 +56,9 @@ export default function Home() {
                             boxSize="80px"
                             mx="auto"
                             mb={4}
+                            bg={"#dd6b20"}
+                            borderRadius={8}
+
                         />
                     </FeatureCard>
                     <FeatureCard title="Prise en compte des images fournies">
@@ -66,6 +68,9 @@ export default function Home() {
                             boxSize="80px"
                             mx="auto"
                             mb={4}
+                            bg={"#dd6b20"}
+                            borderRadius={8}
+
                         />
                     </FeatureCard>
                     <FeatureCard title="Avis objectif généré par IA">
@@ -75,6 +80,10 @@ export default function Home() {
                             boxSize="80px"
                             mx="auto"
                             mb={4}
+                            bg={"#dd6b20"}
+                            borderRadius={8}
+
+
                         />
                     </FeatureCard>
                     <FeatureCard title="Recommandations personnalisées">
@@ -85,6 +94,7 @@ export default function Home() {
                             mx="auto"
                             mb={4}
                             borderRadius={8}
+                            bg={"#dd6b20"}
                         />
                     </FeatureCard>
                 </SimpleGrid>
