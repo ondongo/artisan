@@ -13,7 +13,7 @@ import { useRouter } from "next/navigation";
 import KeyFiguresSection from "@/components/number";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import StormDiv from "@/components/section";
-import NavBar from "@/components/NavBar";
+import NavBar2 from "@/components/NavBar2";
 export default function Home() {
   const router = useRouter();
 
@@ -31,7 +31,7 @@ export default function Home() {
       overflow={"hidden"}
     >
       {/* Header */}
-      <NavBar />
+      <NavBar2 />
 
       {/* Hero Section */}
       <Container maxW="7xl" py={12}>

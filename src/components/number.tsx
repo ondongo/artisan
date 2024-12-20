@@ -1,4 +1,3 @@
-// components/KeyFiguresSection.tsx
 import { Box, Text, Flex } from "@chakra-ui/react";
 
 const KeyFiguresSection = () => {
@@ -14,7 +13,6 @@ const KeyFiguresSection = () => {
         gap={10}
         direction={{ base: "column", md: "row" }}
       >
-        {/* Bloc 1 */}
 
         <Flex direction="row" align={["start ", null, "center"]} padding="4">
           <Box
