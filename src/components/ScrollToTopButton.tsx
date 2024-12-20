@@ -39,7 +39,9 @@ const ScrollToTopButton: React.FC = () => {
                     _hover={{ bg: hoverBgColor }}
                     zIndex={1000}
                     size="lg"
-                    borderRadius="full"
+                    borderRadius="100"
+                    w={"50px"}
+                  
                     onClick={scrollToTop}
                 >
                     <Icon as={FaArrowUp} />
