@@ -100,7 +100,7 @@ function NavBar() {
 
       {/* Mobile Menu Button */}
 
-      <Box display={["block", null, null, null, "none"]} onClick={onOpen}>
+      <Box display={["block", null, "none", "none", "none"]} onClick={onOpen}>
         {isOpen ? <CloseIcon /> : <MenuIcon />}
       </Box>
 

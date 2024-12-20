@@ -21,7 +21,15 @@ export default function Home() {
     router.push("/demo");
   };
   return (
-    <Flex bg="gray.50" minH="100vh" direction={"column"} justifyContent={"center"} alignItems={"center"} pt="30px" overflow={"hidden"}>
+    <Flex
+      bg="gray.50"
+      minH="100vh"
+      direction={"column"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      pt="30px"
+      overflow={"hidden"}
+    >
       {/* Header */}
       <NavBar />
 
@@ -37,19 +45,17 @@ export default function Home() {
             flex="1"
             textAlign={{ base: "center", md: "left" }}
             mb={{ base: 8, md: 0 }}
-          
           >
             <Heading
               lineHeight={1.2}
               fontWeight={700}
-              fontSize={{ base: "26px", sm: "30px", md: "46px" }}
+              fontSize={{ base: "24px", sm: "30px", md: "40px", lg: "40px", xl: "46px"}}
               mb={4}
-              
             >
               <Text
                 as={"span"}
                 position={"relative"}
-                zIndex={1} 
+                zIndex={1}
                 _after={{
                   content: "''",
                   width: "100%",
@@ -61,11 +67,11 @@ export default function Home() {
                   zIndex: -1, // Le pseudo-élément est derrière
                 }}
               >
-                Obtenez une analyse experte 
+                Obtenez une analyse experte
               </Text>
               <br />
               <Text as={"span"} color={"#DD6A1F"}>
-              de vos devis en quelques clics
+                de vos devis en quelques clics
               </Text>
             </Heading>
 
