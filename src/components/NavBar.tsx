@@ -14,6 +14,7 @@ import {
   IconButton,
   useDisclosure,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React, { useState, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -36,12 +37,11 @@ function NavBar() {
       height={"80px"}
       borderRadius={"md"}
       width={"95%"}
-  
     >
       {/* Logo */}
-      <a href="/">
+      <Link href="/" passHref>
         <Image src="/logo.png" width="150px" height="90px" />
-      </a>
+      </Link>
 
       {/* Desktop Navigation */}
       <Flex
@@ -81,7 +81,7 @@ function NavBar() {
       <IconButton
         aria-label="Menu"
         icon={<FiMenu />}
-   
+        display={["block", "none"]}
         ref={btnRef}
         onClick={onOpen}
         bg="transparent"
@@ -163,7 +163,6 @@ function NavItem({ title, path, isActive = false, onClick }) {
       cursor="pointer"
       onClick={() => {
         router.push(path);
-     
       }}
       _after={{
         content: "''",
