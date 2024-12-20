@@ -19,6 +19,27 @@ import { usePathname, useRouter } from "next/navigation";
 import React, { useState, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
+const CloseIcon = () => (
+  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+    <title>Close</title>
+    <path
+      fill="#DD6A1F"
+      d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
+    />
+  </svg>
+);
+
+const MenuIcon = () => (
+  <svg
+    width="24px"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#DD6A1F"
+  >
+    <title>Menu</title>
+    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+  </svg>
+);
 function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -78,14 +99,10 @@ function NavBar() {
       </Flex>
 
       {/* Mobile Menu Button */}
-      <IconButton
-        aria-label="Menu"
-        icon={<FiMenu />}
-        display={["block", "none"]}
-        ref={btnRef}
-        onClick={onOpen}
-        bg="transparent"
-      />
+
+      <Box display={["block", null, null, null, "none"]} onClick={onOpen}>
+        {isOpen ? <CloseIcon /> : <MenuIcon />}
+      </Box>
 
       {/* Contact Button */}
       <Button
@@ -98,14 +115,9 @@ function NavBar() {
       </Button>
 
       {/* Mobile Navigation Drawer */}
-      <Drawer
-        isOpen={isOpen}
-        placement="left"
-        onClose={onClose}
-        finalFocusRef={btnRef}
-      >
-        <DrawerOverlay zIndex="1400" />
-        <DrawerContent zIndex="1500">
+      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+        <DrawerOverlay />
+        <DrawerContent zIndex={999} minH={"100vh"}>
           <DrawerCloseButton />
           <DrawerHeader>Menu</DrawerHeader>
 
@@ -174,6 +186,7 @@ function NavItem({ title, path, isActive = false, onClick }) {
         left: "25%",
         transition: "width 0.3s ease",
         borderRadius: "10px",
+        display: { base: "none", md: "block" },
       }}
       _hover={{
         _after: {
