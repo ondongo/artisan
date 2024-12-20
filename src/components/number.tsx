@@ -30,7 +30,7 @@ const KeyFiguresSection = () => {
               50%
             </Text>
             <Text fontSize="16px" color="#2D2D2D" textAlign="start">
-              Ont déjà eu un roblème avec un devis
+              On a déjà eu un problème avec un devis
             </Text>
           </Flex>
         </Flex>
@@ -54,7 +54,7 @@ const KeyFiguresSection = () => {
               40%
             </Text>
             <Text fontSize="16px" color="#2D2D2D" textAlign="start">
-              Afirment manquer de connaisances sur le sujet
+              Affirment manquer de connaisances sur le sujet
             </Text>
           </Flex>
         </Flex>
