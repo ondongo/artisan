@@ -1,6 +1,9 @@
+"use client"
 import { Box, Button, Image, Text, Stack } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 
 const StormDiv = () => {
+    const router = useRouter();
     return (
         <Box
             bg="#DD6B20"
@@ -46,7 +49,7 @@ const StormDiv = () => {
                         bg="white"
                         color="#DD6B20"
                         size="lg"
-                        onClick={() => console.log("Analyser mon devis gratuitement")}
+                        onClick={() => router.push("/demo")}
                         borderRadius="md"
                     >
                         Démarrer mon essai gratuit
