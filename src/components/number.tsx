@@ -28,7 +28,7 @@ const KeyFiguresSection = () => {
               50%
             </Text>
             <Text fontSize="16px" color="#2D2D2D" textAlign="start">
-              On déjà eu un problème avec un devis
+              Ont déjà eu un problème avec un devis
             </Text>
           </Flex>
         </Flex>
