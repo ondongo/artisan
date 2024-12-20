@@ -29,14 +29,19 @@ const KeyFiguresSection = () => {
             <Text fontSize="4xl" fontWeight="extrabold" color="black">
               50%
             </Text>
-            <Text fontSize="16px" color="#2D2D2D">
+            <Text fontSize="16px" color="#2D2D2D" textAlign="start">
               Ont déjà eu un roblème avec un devis
             </Text>
           </Flex>
         </Flex>
 
         {/* Bloc 2 */}
-        <Flex direction="row" align={["start ", null, "center"]} padding="4" textAlign="start">
+        <Flex
+          direction="row"
+          align={["start ", null, "center"]}
+          padding="4"
+          textAlign="start"
+        >
           <Box
             width="8px"
             bg="#DD6A1F"

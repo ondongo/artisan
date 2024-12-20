@@ -547,7 +547,7 @@ export default function Home() {
                     </Box>
 
                     {/* Actions */}
-                    <Flex mt={8} justifyContent="space-between">
+                    <Flex mt={8} justifyContent="space-between"  direction={{ base: "column", md: "row" }} gap={4}>
                       <Button
                         colorScheme="orange"
                         size="md"
