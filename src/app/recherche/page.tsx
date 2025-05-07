@@ -114,82 +114,300 @@ export default function FindArtisan() {
         spacing={6}
         width={["95%", null, "70%"]}
       >
-        {[...Array(4)].map((_, index) => (
-          <Box
-            key={index}
-            bg="white"
-            boxShadow="md"
-            borderRadius="lg"
-            overflow="hidden"
-            _hover={{ boxShadow: "lg" }}
-          >
-            {/* Image */}
-            <Box overflow="hidden" borderRadius="md" m={"12px"}>
-              <Image
-                src="/plombier_salledebain_rennes 2.png"
-                alt="Artisan"
-                objectFit="cover"
-                height="250px"
-                width="100%" // S'assure que l'image remplit le conteneur
-              />
-            </Box>
-            {/* Content */}
-            <Box p={4}>
-              {/* Name and Location */}
-              <VStack spacing={1} align="start">
-                <Flex
-                  justifyContent={"space-between"}
-                  alignItems={"center"}
-                  w={"100%"}
-                >
-                  <Text fontWeight="bold" fontSize="lg" color="gray.800">
-                    Martin Dupont
-                  </Text>
-                  <Flex alignItems={"center"} color="gray.500" fontSize="sm">
-                    <FiMapPin />
-                    <Text ml={1}>Paris 15ème</Text>
-                  </Flex>
-                </Flex>
-                <Text color="gray.500" fontSize="sm">
-                  Plombier - Chauffagiste
-                </Text>
-              </VStack>
-
-              {/* Badges */}
-              <Flex justifyContent="start" mt={4} gap={2}>
-                <Badge
-                  bg="#FAE9DF"
-                  color="#D97706"
-                  px={3}
-                  py={1}
-                  borderRadius="full"
-                >
-                  RGE
-                </Badge>
-                <Badge
-                  bg="#FAE9DF"
-                  color="#D97706"
-                  px={3}
-                  py={1}
-                  borderRadius="full"
-                >
-                  Qualibat
-                </Badge>
-              </Flex>
-
-              {/* CTA */}
-              <Button
-                mt={6}
-                colorScheme="orange"
-                variant="solid"
-                width="full"
-                borderRadius="md"
-              >
-                Voir plus
-              </Button>
-            </Box>
+        <Box
+          bg="white"
+          boxShadow="md"
+          borderRadius="lg"
+          overflow="hidden"
+          _hover={{ boxShadow: "lg" }}
+        >
+          {/* Image */}
+          <Box overflow="hidden" borderRadius="md" m={"12px"}>
+            <Image
+              src="/plombier_salledebain_rennes 2.png"
+              alt="Artisan"
+              objectFit="cover"
+              height="250px"
+              width="100%" // S'assure que l'image remplit le conteneur
+            />
           </Box>
-        ))}
+          {/* Content */}
+          <Box p={4}>
+            {/* Name and Location */}
+            <VStack spacing={1} align="start">
+              <Flex
+                justifyContent={"space-between"}
+                alignItems={"center"}
+                w={"100%"}
+              >
+                <Text fontWeight="bold" fontSize="lg" color="gray.800">
+                  Martin Dupont
+                </Text>
+                <Flex alignItems={"center"} color="gray.500" fontSize="sm">
+                  <FiMapPin />
+                  <Text ml={1}>Paris 15ème</Text>
+                </Flex>
+              </Flex>
+              <Text color="gray.500" fontSize="sm">
+                Plombier - Chauffagiste
+              </Text>
+            </VStack>
+
+            {/* Badges */}
+            <Flex justifyContent="start" mt={4} gap={2}>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                RGE
+              </Badge>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                Qualibat
+              </Badge>
+            </Flex>
+
+            {/* CTA */}
+            <Button
+              mt={6}
+              colorScheme="orange"
+              variant="solid"
+              width="full"
+              borderRadius="md"
+            >
+              Voir plus
+            </Button>
+          </Box>
+        </Box>
+
+        <Box
+          bg="white"
+          boxShadow="md"
+          borderRadius="lg"
+          overflow="hidden"
+          _hover={{ boxShadow: "lg" }}
+        >
+          {/* Image */}
+          <Box overflow="hidden" borderRadius="md" m={"12px"}>
+            <Image
+              src="/plombier_salledebain_rennes 2.png"
+              alt="Artisan"
+              objectFit="cover"
+              height="250px"
+              width="100%" // S'assure que l'image remplit le conteneur
+            />
+          </Box>
+          {/* Content */}
+          <Box p={4}>
+            {/* Name and Location */}
+            <VStack spacing={1} align="start">
+              <Flex
+                justifyContent={"space-between"}
+                alignItems={"center"}
+                w={"100%"}
+              >
+                <Text fontWeight="bold" fontSize="lg" color="gray.800">
+                Sophie Laurent
+                </Text>
+                <Flex alignItems={"center"} color="gray.500" fontSize="sm">
+                  <FiMapPin />
+                  <Text ml={1}>Paris 15ème</Text>
+                </Flex>
+              </Flex>
+              <Text color="gray.500" fontSize="sm">
+                Plombier - Chauffagiste
+              </Text>
+            </VStack>
+
+            {/* Badges */}
+            <Flex justifyContent="start" mt={4} gap={2}>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                RGE
+              </Badge>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                Qualibat
+              </Badge>
+            </Flex>
+
+            {/* CTA */}
+            <Button
+              mt={6}
+              colorScheme="orange"
+              variant="solid"
+              width="full"
+              borderRadius="md"
+            >
+              Voir plus
+            </Button>
+          </Box>
+        </Box>
+
+        <Box
+          bg="white"
+          boxShadow="md"
+          borderRadius="lg"
+          overflow="hidden"
+          _hover={{ boxShadow: "lg" }}
+        >
+          {/* Image */}
+          <Box overflow="hidden" borderRadius="md" m={"12px"}>
+            <Image
+              src="/éléctricienne.png"
+              alt="Artisan"
+              objectFit="cover"
+              height="250px"
+              width="100%" // S'assure que l'image remplit le conteneur
+            />
+          </Box>
+          {/* Content */}
+          <Box p={4}>
+            {/* Name and Location */}
+            <VStack spacing={1} align="start">
+              <Flex
+                justifyContent={"space-between"}
+                alignItems={"center"}
+                w={"100%"}
+              >
+                <Text fontWeight="bold" fontSize="lg" color="gray.800">
+                Sophie Laurent
+                </Text>
+                <Flex alignItems={"center"} color="gray.500" fontSize="sm">
+                  <FiMapPin />
+                  <Text ml={1}>Paris 11ème</Text>
+                </Flex>
+              </Flex>
+              <Text color="gray.500" fontSize="sm">
+                Plombier - Chauffagiste
+              </Text>
+            </VStack>
+
+            {/* Badges */}
+            <Flex justifyContent="start" mt={4} gap={2}>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                RGE
+              </Badge>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                Qualibat
+              </Badge>
+            </Flex>
+
+            {/* CTA */}
+            <Button
+              mt={6}
+              colorScheme="orange"
+              variant="solid"
+              width="full"
+              borderRadius="md"
+            >
+              Voir plus
+            </Button>
+          </Box>
+        </Box>
+        <Box
+          bg="white"
+          boxShadow="md"
+          borderRadius="lg"
+          overflow="hidden"
+          _hover={{ boxShadow: "lg" }}
+        >
+          {/* Image */}
+          <Box overflow="hidden" borderRadius="md" m={"12px"}>
+            <Image
+              src="/Rénovation_générale.png"
+              alt="Artisan"
+              objectFit="cover"
+              height="250px"
+              width="100%" // S'assure que l'image remplit le conteneur
+            />
+          </Box>
+          {/* Content */}
+          <Box p={4}>
+            {/* Name and Location */}
+            <VStack spacing={1} align="start">
+              <Flex
+                justifyContent={"space-between"}
+                alignItems={"center"}
+                w={"100%"}
+              >
+                <Text fontWeight="bold" fontSize="lg" color="gray.800">
+                  Martin Dupont
+                </Text>
+                <Flex alignItems={"center"} color="gray.500" fontSize="sm">
+                  <FiMapPin />
+                  <Text ml={1}>Paris 15ème</Text>
+                </Flex>
+              </Flex>
+              <Text color="gray.500" fontSize="sm">
+                Plombier - Chauffagiste
+              </Text>
+            </VStack>
+
+            {/* Badges */}
+            <Flex justifyContent="start" mt={4} gap={2}>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                RGE
+              </Badge>
+              <Badge
+                bg="#FAE9DF"
+                color="#D97706"
+                px={3}
+                py={1}
+                borderRadius="full"
+              >
+                Qualibat
+              </Badge>
+            </Flex>
+
+            {/* CTA */}
+            <Button
+              mt={6}
+              colorScheme="orange"
+              variant="solid"
+              width="full"
+              borderRadius="md"
+            >
+              Voir plus
+            </Button>
+          </Box>
+        </Box>
       </SimpleGrid>
     </Flex>
   );

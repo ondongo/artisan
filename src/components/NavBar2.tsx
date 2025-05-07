@@ -61,7 +61,7 @@ function NavBar() {
         >
             {/* Logo */}
             <Link href="/" passHref>
-                <Image src="/logo.png" width="150px" height="90px" />
+                <Image src="/newLogo.png" width="150px" height="60px" />
             </Link>
 
             {/* Desktop Navigation */}
