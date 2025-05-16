@@ -63,14 +63,14 @@ export default function Home() {
                   position: "absolute",
                   bottom: 1,
                   left: 1,
-                  bg: "#DD6A1F",
+                  bg: "#D06A23",
                   zIndex: -1, // Le pseudo-élément est derrière
                 }}
               >
                 Obtenez une analyse experte
               </Text>
               <br />
-              <Text as={"span"} color={"#DD6A1F"}>
+              <Text as={"span"} color={"#D06A23"}>
                 de vos devis en quelques clics
               </Text>
             </Heading>

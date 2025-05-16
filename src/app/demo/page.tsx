@@ -253,7 +253,7 @@ export default function Home() {
                 <Tab
                   _selected={{
                     bg: "#FFFFFF",
-                    color: "#DD6A1F",
+                    color: "#D06A23",
                     fontWeight: "bold",
                     borderRadius: "md",
                   }}
@@ -264,7 +264,7 @@ export default function Home() {
                 <Tab
                   _selected={{
                     bg: "#FFFFFF",
-                    color: "#DD6A1F",
+                    color: "#D06A23",
                     fontWeight: "bold",
                     borderRadius: "md",
                   }}
@@ -285,7 +285,7 @@ export default function Home() {
                 {!fileData.base64 ? (
                   <Box
                     {...getRootProps()}
-                    border="2px dashed #DD6A1F"
+                    border="2px dashed #D06A23"
                     bg="#FFF9F4"
                     borderRadius="md"
                     padding={8}
@@ -308,7 +308,7 @@ export default function Home() {
                     />
                     <Text color="gray.600">
                       Glissez votre devis ici ou{" "}
-                      <Text as="span" color="#DD6A1F" fontWeight="bold">
+                      <Text as="span" color="#D06A23" fontWeight="bold">
                         choisissez un fichier
                       </Text>
                     </Text>

@@ -17,7 +17,7 @@ const KeyFiguresSection = () => {
         <Flex direction="row" align={["start ", null, "center"]} padding="4">
           <Box
             width="8px"
-            bg="#DD6A1F"
+            bg="#D06A23"
             height="100px"
             borderRadius="md"
             mr="4"
@@ -42,7 +42,7 @@ const KeyFiguresSection = () => {
         >
           <Box
             width="8px"
-            bg="#DD6A1F"
+            bg="#D06A23"
             height="100px"
             borderRadius="md"
             mr="4"
@@ -60,7 +60,7 @@ const KeyFiguresSection = () => {
         <Flex direction="row" align={["start ", null, "center"]} padding="4">
           <Box
             width="8px"
-            bg="#DD6A1F"
+            bg="#D06A23"
             height="100px"
             borderRadius="md"
             mr="4"
